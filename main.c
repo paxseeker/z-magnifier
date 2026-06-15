@@ -482,7 +482,6 @@ pointer_frame(void *data, struct wl_pointer *pointer)
         if (m->lens_radius < 50) m->lens_radius = 50;
         if (m->lens_radius > 400) m->lens_radius = 400;
         if (m->lens_radius != old) {
-            fprintf(stderr, "radius: %d\n", m->lens_radius);
             m->pending_render = true;
         }
     } else {
@@ -491,7 +490,6 @@ pointer_frame(void *data, struct wl_pointer *pointer)
         if (m->zoom < 1.0) m->zoom = 1.0;
         if (m->zoom > 20.0) m->zoom = 20.0;
         if (m->zoom != old_zoom) {
-            fprintf(stderr, "zoom: %.1f  dir: %d\n", m->zoom, dir);
             m->pending_render = true;
         }
     }
