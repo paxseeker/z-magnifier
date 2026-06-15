@@ -1,0 +1,9 @@
+magnifier
+*.o
+wlr-screencopy-unstable-v1.h
+wlr-screencopy-unstable-v1.c
+wlr-layer-shell-unstable-v1.h
+wlr-layer-shell-unstable-v1.c
+xdg-shell.h
+xdg-shell.c
+.opencode/
