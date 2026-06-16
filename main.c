@@ -428,7 +428,7 @@ pointer_button(void *data, struct wl_pointer *pointer,
                uint32_t serial, uint32_t time, uint32_t button, uint32_t state)
 {
     struct magnifier *m = data;
-    if (state == WL_POINTER_BUTTON_STATE_PRESSED && button == 272)
+    if (state == WL_POINTER_BUTTON_STATE_PRESSED && button == 273)
         m->running = false;
 }
 
